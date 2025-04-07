@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="#B3CC84">
+
+    <TextView
+        android:id="@+id/yearTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onYearClicked"
+        android:padding="8dp"
+        android:text="2025"
+        android:textSize="24sp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <!-- Headers -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Месяц"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="S"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="M"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!-- Rows for months -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Январь" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Февраль" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Март" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Апрель" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Май" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Июнь" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Июль" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Август" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Сентябрь" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Октябрь" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Ноябрь" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Декабрь" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="-"
+                android:background="@drawable/edittext_bg"
+                android:inputType="numberDecimal"
+                android:padding="8dp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Рассчитать"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#A675A1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
+
+</LinearLayout>
