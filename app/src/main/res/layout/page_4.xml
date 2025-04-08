@@ -17,6 +17,7 @@ android:layout_height="wrap_content"
         android:id="@+id/congratulationsTextView2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:background="@drawable/edittext_bg"
         android:gravity="center"
         android:text="Рекомендации"
@@ -24,19 +25,19 @@ android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/congratulationsTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="276dp"
+        android:layout_marginTop="432dp"
         android:background="@drawable/edittext_bg"
         android:gravity="center"
-        android:text="Мои поздравления! Ваша компания весьма экологична и показатели в норме, так держать! И, не забывайте, что я являюсь лишь заглушкой, удачи вам! "
+        android:text="Мои поздравления! Ваша компания весьма экологична и показатели в норме, так держать! Спасибо, что посмотрели на меня, вы большие молодцы! Удачи вам в ваших свершениях! "
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -55,6 +56,14 @@ android:id="@+id/backButton"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintVertical_bias="0.683"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="369dp"
+        android:layout_height="406dp"
+        app:srcCompat="@drawable/stonks"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>

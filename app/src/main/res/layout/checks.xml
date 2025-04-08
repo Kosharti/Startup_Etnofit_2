@@ -12,11 +12,11 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="208dp"
+        android:layout_marginTop="204dp"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -36,9 +36,9 @@
             android:id="@+id/inputChecks"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
             android:hint="Количество чеков"
             android:inputType="number"
-            android:background="@drawable/edittext_bg"
             android:padding="12dp"
             android:textColor="#000000"
             android:textColorHint="#888888" />
@@ -61,5 +61,28 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintVertical_bias="0.85" />
+
+    <TextView
+        android:id="@+id/textView_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="167dp"
+        android:text="GreenFootprint"
+        android:textColor="@color/Greengo"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="80dp"
+        android:layout_height="94dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
