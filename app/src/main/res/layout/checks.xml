@@ -10,6 +10,7 @@
     android:background="#B3CC84">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="204dp"
@@ -21,27 +22,30 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
+            android:id="@+id/inputYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Год"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/spinnerMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
             android:id="@+id/inputRevenue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:background="@drawable/edittext_bg"
             android:hint="Выручка"
-            android:inputType="numberDecimal"
-            android:padding="12dp"
-            android:textColor="#000000"
-            android:textColorHint="#888888" />
+            android:inputType="numberDecimal" />
 
         <EditText
             android:id="@+id/inputChecks"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edittext_bg"
             android:hint="Количество чеков"
-            android:inputType="number"
-            android:padding="12dp"
-            android:textColor="#000000"
-            android:textColorHint="#888888" />
+            android:inputType="number" />
 
     </LinearLayout>
 
@@ -84,5 +88,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_2" />
+
+    <Button
+        android:id="@+id/buttonClearDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="67dp"
+        android:text="Очистить базу данных"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalculateChecks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

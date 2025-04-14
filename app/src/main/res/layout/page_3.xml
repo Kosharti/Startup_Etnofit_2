@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B3CC84"
     android:orientation="vertical"
     android:padding="16dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainActivity"
-    android:background="#B3CC84">
+    tools:context=".Page3Activity">
 
     <TextView
         android:id="@+id/yearTextView"
@@ -28,7 +28,6 @@
         android:layout_height="wrap_content"
         android:stretchColumns="*">
 
-        <!-- Headers -->
         <TableRow>
 
             <TextView
@@ -59,7 +58,6 @@
                 android:textStyle="bold" />
         </TableRow>
 
-        <!-- Rows for months -->
         <TableRow>
 
             <TextView
@@ -70,25 +68,23 @@
                 android:padding="8dp"
                 android:text="Январь" />
 
-            <EditText
+            <TextView
+                android:id="@+id/januaryS"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
 
-            <EditText
+            <TextView
+                android:id="@+id/januaryM"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
         </TableRow>
 
         <TableRow>
@@ -101,25 +97,23 @@
                 android:padding="8dp"
                 android:text="Февраль" />
 
-            <EditText
+            <TextView
+                android:id="@+id/februaryS"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
 
-            <EditText
+            <TextView
+                android:id="@+id/februaryM"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
         </TableRow>
 
         <TableRow>
@@ -132,25 +126,23 @@
                 android:padding="8dp"
                 android:text="Март" />
 
-            <EditText
+            <TextView
+                android:id="@+id/marchS"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
 
-            <EditText
+            <TextView
+                android:id="@+id/marchM"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
         </TableRow>
 
         <TableRow>
@@ -163,25 +155,23 @@
                 android:padding="8dp"
                 android:text="Апрель" />
 
-            <EditText
+            <TextView
+                android:id="@+id/aprilS"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
 
-            <EditText
+            <TextView
+                android:id="@+id/aprilM"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
         </TableRow>
 
         <TableRow>
@@ -194,25 +184,23 @@
                 android:padding="8dp"
                 android:text="Май" />
 
-            <EditText
+            <TextView
+                android:id="@+id/mayS"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
 
-            <EditText
+            <TextView
+                android:id="@+id/mayM"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
         </TableRow>
 
         <TableRow>
@@ -225,25 +213,23 @@
                 android:padding="8dp"
                 android:text="Июнь" />
 
-            <EditText
+            <TextView
+                android:id="@+id/juneS"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
 
-            <EditText
+            <TextView
+                android:id="@+id/juneM"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
         </TableRow>
 
         <TableRow>
@@ -256,25 +242,23 @@
                 android:padding="8dp"
                 android:text="Июль" />
 
-            <EditText
+            <TextView
+                android:id="@+id/julyS"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
 
-            <EditText
+            <TextView
+                android:id="@+id/julyM"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
         </TableRow>
 
         <TableRow>
@@ -287,25 +271,23 @@
                 android:padding="8dp"
                 android:text="Август" />
 
-            <EditText
+            <TextView
+                android:id="@+id/augustS"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
 
-            <EditText
+            <TextView
+                android:id="@+id/augustM"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
         </TableRow>
 
         <TableRow>
@@ -318,25 +300,23 @@
                 android:padding="8dp"
                 android:text="Сентябрь" />
 
-            <EditText
+            <TextView
+                android:id="@+id/septemberS"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
 
-            <EditText
+            <TextView
+                android:id="@+id/septemberM"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
         </TableRow>
 
         <TableRow>
@@ -349,25 +329,23 @@
                 android:padding="8dp"
                 android:text="Октябрь" />
 
-            <EditText
+            <TextView
+                android:id="@+id/octoberS"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
 
-            <EditText
+            <TextView
+                android:id="@+id/octoberM"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
         </TableRow>
 
         <TableRow>
@@ -380,25 +358,23 @@
                 android:padding="8dp"
                 android:text="Ноябрь" />
 
-            <EditText
+            <TextView
+                android:id="@+id/novemberS"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
 
-            <EditText
+            <TextView
+                android:id="@+id/novemberM"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
         </TableRow>
 
         <TableRow>
@@ -411,28 +387,24 @@
                 android:padding="8dp"
                 android:text="Декабрь" />
 
-            <EditText
+            <TextView
+                android:id="@+id/decemberS"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
 
-            <EditText
+            <TextView
+                android:id="@+id/decemberM"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:hint="-"
-                android:background="@drawable/edittext_bg"
-                android:inputType="numberDecimal"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:text="-" />
         </TableRow>
-
-
     </TableLayout>
 
     <Space
@@ -440,19 +412,41 @@
         android:layout_height="wrap_content"
         android:layout_weight="1" />
 
-    <Button
-        android:id="@+id/button_3"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:text="Рассчитать"
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#A675A1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.683" />
+        android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#A675A1"
+            android:padding="16dp"
+            android:text="Продолжить заполнение"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.683" />
+
+        <Button
+            android:id="@+id/buttonShowResult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#A675A1"
+            android:padding="16dp"
+            android:text="Показать результат"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.683" />
+    </LinearLayout>
 </LinearLayout>
